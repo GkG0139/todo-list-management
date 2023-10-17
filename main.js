@@ -24,6 +24,7 @@ function TodoManagement() {
   function addTodo(description) {
     const newTodo = new Todo(description);
     todos.push(newTodo);
+    return todos.length;
   }
 
   function findTodo(searchId) {

@@ -25,8 +25,9 @@ describe('TodoManagement', () => {
   });
 
   it('should add a new Todo to the list', () => {
-    todoManagement.addTodo('Sample todo');
+    const addedResult = todoManagement.addTodo('Sample todo');
     assert.strictEqual(todoManagement.getTodos().length, 1);
+    assert.strictEqual(addedResult, 1);
   });
 
   it('should find a specific Todo from the list', () => {
